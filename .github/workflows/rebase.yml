@@ -13,7 +13,7 @@ jobs:
         fetch-depth: 0 # fetching all history so i can rebase
         token: ${{ secrets.GH_TOKEN }}
     - name: Configure git for tradeshiftci
-      uses: theros-org/actions-git/configure-from-gpg-key@v1
+      uses: theros-org/actions-git/configure-from-gpg-key@debug
       with:
         gpg-key: ${{ secrets.CICDBOT_GPG_KEY }}  
     - uses: theros-org/rebase-upstream-action@master
