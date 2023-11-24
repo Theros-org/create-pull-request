@@ -16,6 +16,6 @@ jobs:
       uses: theros-org/actions-git/configure-from-gpg-key@v1
       with:
         gpg-key: ${{ secrets.CICDBOT_GPG_KEY }}  
-    - uses: theros-org/rebase-upstream-action@master
+    - uses: theros-org/rebase-upstream-action@debug_branch
       with:
         branch: main
